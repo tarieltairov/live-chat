@@ -1,0 +1,140 @@
+p {
+    margin: 0;
+}
+.chat {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+    }
+    &_container {
+        width: 500px;
+        height: 500px;
+        box-sizing: border-box;
+        .list {
+            width: 100%;
+            height: 85%;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {width:0px;}
+            background-color: #0e1621;
+            .connection {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 0 15px;
+                box-sizing: border-box;
+                justify-content: center;
+                margin-bottom: 15px;
+                .inner {
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #6d7f8f;
+                }
+            }
+            .message {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 0 15px;
+                box-sizing: border-box;
+                justify-content: flex-start;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                .inner {
+                    min-width: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding-left: 10px;
+                    border-radius: 8px;
+                    background-color: #182533;
+                    color: white;
+                    padding: 8px;
+                    .author {
+                        color: #faa357;
+                    }
+                    &_mes {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-right: 10px;
+                        .date {
+                            color: #6d7f8f;
+                        }
+                    }
+                }
+            }
+            .your {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 0 15px;
+                box-sizing: border-box;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                .inner {
+                    min-width: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding-left: 10px;
+                    border-radius: 8px;
+                    background-color: #182533;
+                    color: white;
+                    padding: 8px;
+                    &_mes {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-right: 10px;
+                        .date {
+                            color: #6d7f8f;
+                        }
+                    }
+                }
+            }
+        }
+        .form {
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #17212b;
+            input {
+                height: 40px;
+                width: 350px;
+                outline: none;
+                padding-left: 15px;
+                font-size: 16px;
+                background-color: transparent;
+                border: none;
+                color: white;
+            }
+            button {
+                height: 40px;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                color: #416994;
+                &:hover{
+                    color: #6c7e92;
+                }
+            }
+        }
+    }
+}
