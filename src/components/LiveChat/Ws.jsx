@@ -9,7 +9,7 @@ const Ws = () => {
     const [user, setUser] = useState('');
 
     const connect = () => {
-        socket.current = new WebSocket('https://pacific-journey-85171.herokuapp.com/');
+        socket.current = new WebSocket('ws://pacific-journey-85171.herokuapp.com/');
         if (user.length) {
             socket.current.onopen = () => {
                 setConnected(true);
